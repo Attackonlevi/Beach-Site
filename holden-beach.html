@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Holden Beach</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="holden-beach.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="content flex_space">
+        <div class="logo">
+            <img src="C:\Users\madis\Downloads\My project (2).jpg" alt="">
+        </div>
+        <div class="navlinks">
+            <ul id="menulist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rentals">Rentals</a></li>
+                <li><a href="#pages">Pages</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li> <i class="fa-solid fa-magnifying-glass"></i></li>
+                <li> <button class="primary-btn">Book Now</button> </li>
+            </ul>
+            <span class="fa-solid fa-bars" onclick="menutoggle()"></span>
+        </div>
+    </div>
+</header>
+
+<script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+<section class="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_75,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/brunswickcountync/NCBI_HoldenBeachPier_IMG_72840-6d81a6c5d681617_6d81a788-c743-da24-ec0822a3758491c6.jpg" alt="">
+          <div class="text">
+            <h1>Holden Beach</h1>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">Read More</button>
+              <button class="secondary-btn">Contact Us</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/brunswickcountync/DSC_0436_HOLDEN_BEACH_c9e80ca5-1761-46c3-80e0-f1143c20cbf1.jpg" alt="">
+          <div class="text">
+            <h1>Holden Beach</h1>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">Read More</button>
+              <button class="secondary-btn">Contact Us</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://www.capefear-nc.com/images/uploads/static_content/362/690-2019.jpg" alt="">
+          <div class="text">
+            <h1>Holden Beach</h1>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+            </p>
+            <div class="flex">
+              <button class="primary-btn">Read More</button>
+              <button class="secondary-btn">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script>
+
+
+<section class="book">
+    <div class="container flex_space">
+        <div class="text">
+            <h1><span>Book </span>Your Rental</h1>
+        </div>
+        <div class="form">
+            <form class="grid">
+                <input type="date" placeholder="Arrival Date">
+                <input type="date" placeholder="Departure Date">
+                <input type="number" placeholder="Adults">
+                <input type="number" placeholder="Children">
+                <input type="submit" value="Check Availability">
+                </form>
+        </div>
+    </div>
+</section>
+
+<section class="about top">
+    <div class="container flex">
+        <div class="left">
+            <div class="heading">
+                <h1>Welcome</h1>
+                <h2>Holden Beach Rentals</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut lorem a ipsum dapibus condimentum eget sed sapien. Phasellus pulvinar odio nunc, non porta sem scelerisque eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed non risus sollicitudin, lacinia erat non,  lacinia quis et urna.</p>
+            <button class="primary-btn">About Us</button>
+        </div>
+        <div class="right">
+            <img src="C:\Users\madis\Downloads\My project (1).jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="counter top">
+    <div class="container grid">
+
+        <div class="box">
+            <h1>2500</h1>
+            <hr>
+            <span>Customer</span>
+        </div>
+
+        <div class="box">
+            <h1>2500</h1>
+            <hr>
+            <span>Customer</span>
+        </div>
+
+        <div class="box">
+            <h1>2500</h1>
+            <hr>
+            <span>Customer</span>
+        </div>
+
+        <div class="box">
+            <h1>2500</h1>
+            <hr>
+            <span>Customer</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="rooms">
+    <div class="container top">
+        <div class="heading">
+            <h1>Explore</h1>
+            <h2>Our Rentals</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor nunc.</p>
+        </div>
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                    <div class="image">
+                        <img src="https://images.rezfusion.com/?optimize=true&rotate=true&quality=70&source=https%3A//gallery.streamlinevrs.com/units-gallery/00/06/82/image_155778953.jpeg&settings=default" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Oceanfront</h2>
+                        <div class="rate flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor nunc.</p>
+                        <div class="button flex">
+                            <button class="primary-btn">Book Now</button>
+                            <h3>$542<span><br>Per Night</span></h3>
+                        </div>
+                    </div>
+                </div>
+
+    <div class="items">
+        <div class="image">
+          <img src="https://images.rezfusion.com/?optimize=true&rotate=true&quality=70&source=https%3A//gallery.streamlinevrs.com/units-gallery/00/06/81/image_155772629.jpeg&settings=default" alt="">
+        </div>
+        <div class="text">
+          <h2>Boulevard</h2>
+          <div class="rate flex">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+          </p>
+          <div class="button flex">
+            <button class="primary-btn">BOOK NOW</button>
+            <h3>$542 <span> <br> Per Night </span> </h3>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="image">
+          <img src="https://images.rezfusion.com/?optimize=true&rotate=true&quality=70&source=https%3A//gallery.streamlinevrs.com/units-gallery/00/06/82/image_155775185.jpeg&settings=default" alt="">
+        </div>
+        <div class="text">
+          <h2>Oceanfront</h2>
+          <div class="rate flex">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+          </p>
+          <div class="button flex">
+            <button class="primary-btn">BOOK NOW</button>
+            <h3>$542 <span> <br> Per Night </span> </h3>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="image">
+          <img src="https://images.rezfusion.com/?optimize=true&rotate=true&quality=70&source=https%3A//gallery.streamlinevrs.com/units-gallery/00/06/81/image_155773024.jpeg&settings=default" alt="">
+        </div>
+        <div class="text">
+          <h2>Oceanfront</h2>
+          <div class="rate flex">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+          </p>
+          <div class="button flex">
+            <button class="primary-btn">BOOK NOW</button>
+            <h3>$542 <span> <br> Per Night </span> </h3>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="image">
+          <img src="https://images.rezfusion.com/?optimize=true&rotate=true&quality=70&source=https%3A//gallery.streamlinevrs.com/units-gallery/00/06/81/image_155770563.jpeg&settings=default" alt="">
+        </div>
+        <div class="text">
+          <h2>Oceanfront</h2>
+          <div class="rate flex">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+          </p>
+          <div class="button flex">
+            <button class="primary-btn">BOOK NOW</button>
+            <h3>$542 <span> <br> Per Night </span> </h3>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="image">
+          <img src="https://images.rezfusion.com/?optimize=true&rotate=true&quality=70&source=https%3A//gallery.streamlinevrs.com/units-gallery/00/06/F4/image_158193256.jpeg&settings=default" alt="">
+        </div>
+        <div class="text">
+          <h2>Canal</h2>
+          <div class="rate flex">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+          </p>
+          <div class="button flex">
+            <button class="primary-btn">BOOK NOW</button>
+            <h3>$542 <span> <br> Per Night </span> </h3>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="image">
+          <img src="https://images.rezfusion.com/?optimize=true&rotate=true&quality=70&source=https%3A//gallery.streamlinevrs.com/units-gallery/00/06/81/image_155772800.jpeg&settings=default" alt="">
+        </div>
+        <div class="text">
+          <h2>Oceanfront</h2>
+          <div class="rate flex">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.
+          </p>
+          <div class="button flex">
+            <button class="primary-btn">BOOK NOW</button>
+            <h3>$542 <span> <br> Per Night </span> </h3>
+          </div>
+        </div>
+      </div>
+      <div class="items">
+        <div class="image">
+          <img src="https://images.rezfusion.com/?optimize=true&rotate=true&quality=70&source=https%3A//gallery.streamlinevrs.com/units-gallery/00/06/82/image_155778545.jpeg&settings=default" alt="">
+        </div>
+        <div class="text">
+          <h2>Boulevard</h2>
+          <div class="rate flex">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
+          <div class="button flex">
+            <button class="primary-btn">BOOK NOW</button>
+            <h3>$542 <span> <br> Per Night </span> </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<script>
+    $('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:40,
+  nav:true,
+  dots:false,
+  navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+  responsive:{
+      0:{
+          items:1
+      },
+      768:{
+          items:2,
+          margin:10,
+      },
+      1000:{
+          items:3
+      }
+  }
+})
+</script>
+
+<section class="gallery">
+    <div class="container top">
+        <div class="heading">
+            <h1>Photos</h1>
+            <h2>Gallery</h2>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
+        </div>
+    </div>
+
+        <div class="content mtop">
+            <div class="owl-carousel owl-carousel1 owl-theme">
+                <div class="items">
+                    <div class="img">
+                        <img src="https://i.pinimg.com/236x/2a/8d/50/2a8d50b9623ca12ae111848af165b4ce.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                        <span class="fa fa-plus"></span>
+                        <h3>Photo title.</h3>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="img">
+                      <img src="https://i.pinimg.com/236x/77/bb/06/77bb0631a23357c1b4a469a8c11702c8.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                      <span class="fa fa-plus"> </span>
+                      <h3>Photo Title.</h3>
+                    </div>
+                  </div>
+                  <div class="items">
+                    <div class="img">
+                      <img src="https://thumbs.dreamstime.com/b/fishing-boat-off-shore-holden-beach-north-fishing-boat-off-shore-105703333.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                      <span class="fa fa-plus"> </span>
+                      <h3>Photo Title.</h3>
+                    </div>
+                  </div>
+                  <div class="items">
+                    <div class="img">
+                      <img src="https://i.pinimg.com/236x/dd/11/32/dd113260a7eaf556dc86e936e979ec30.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                      <span class="fa fa-plus"> </span>
+                      <h3>Photo Title.</h3>
+                    </div>
+                  </div>
+                  <div class="items">
+                    <div class="img">
+                      <img src="https://thumbs.dreamstime.com/b/waves-crashing-under-pier-holden-beach-wave-wooden-north-carolina-132876368.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                      <span class="fa fa-plus"> </span>
+                      <h3>Photo Title.</h3>
+                    </div>
+                  </div>
+                  <div class="items">
+                    <div class="img">
+                      <img src="https://images.squarespace-cdn.com/content/v1/6176edfa410a49171cd11cec/c78f346c-09f7-4af4-a66c-b2977c249fb2/HB+sunrise.jpeg" alt="">
+                    </div>
+                    <div class="overlay">
+                      <span class="fa fa-plus"> </span>
+                      <h3>Photo Title.</h3>
+                    </div>
+                  </div>
+                  <div class="items">
+                    <div class="img">
+                      <img src="https://holdenbeach.com/wp-content/uploads/2020/06/holden-beach-coastal-living.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                      <span class="fa fa-plus"> </span>
+                      <h3>Photo Title.</h3>
+                    </div>
+                  </div>
+                  <div class="items">
+                    <div class="img">
+                      <img src="https://thumbs.dreamstime.com/b/lone-umbrella-beach-holden-north-carolina-atlantic-ocean-58768424.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                      <span class="fa fa-plus"> </span>
+                      <h3>Photo Title.</h3>
+                    </div>
+                  </div>
+                  <div class="items">
+                    <div class="img">
+                      <img src="https://thumbs.dreamstime.com/b/sunset-holden-beach-silhouette-north-carolina-atlantic-ocean-58767644.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                      <span class="fa fa-plus"> </span>
+                      <h3>Photo Title.</h3>
+                    </div>
+                  </div>
+                  <div class="items">
+                    <div class="img">
+                      <img src="https://thumbs.dreamstime.com/b/seabird-fence-sitting-erosion-holden-beach-north-carolina-framed-sea-oats-atlantic-ocean-58769051.jpg" alt="">
+                    </div>
+                    <div class="overlay">
+                      <span class="fa fa-plus"> </span>
+                      <h3>Photo Title.</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+<script>
+    $('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:0,
+  nav:true,
+  dots:false,
+  autoplay:true,
+  autoplayTimeout:1000,
+  autoplayHoverpause:true,
+  navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+  responsive:{
+      0:{
+          items:1
+      },
+      768:{
+          items:4,
+      },
+      1000:{
+          items:6
+      }
+  }
+})
+</script>
+
+<section class="services top">
+    <div class="container">
+        <div class="heading">
+            <h1>Services</h1>
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
+        </div>
+
+        <div class="content flex_space">
+            <div class="left grid2">
+
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                        <h3>Local Restaurants</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-person-biking"></i>
+                        <h3>Fitness</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-ice-cream"></i>
+                        <h3>Ice-cream</h3>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="text">
+                        <i class="fa-solid fa-golf-ball-tee"></i>
+                        <h3>Mini Golf</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <img src="https://i0.wp.com/dockhousehb.com/wp-content/uploads/2020/03/IMG_2914-1.jpg?fit=960%2C720&ssl=1" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="customer top">
+    <div class="container">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+            
+            <div class="item">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>Sed quis eros eu risus efficitur imperdiet. Ut et eros ligula. Integer tincidunt dui eget pulvinar tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eleifend lectus at lectus bibendum cursus. Nulla ornare elementum risus sagittis ultricies. Proin eget mi at odio laoreet rhoncus in sed elit. Vestibulum sagittis ut magna in ornare. Pellentesque volutpat ultrices tortor, a maximus tellus. Nullam quis elit ut mauris vestibulum ornare. Aliquam aliquam sagittis rutrum. Sed maximus vehicula placerat. Vestibulum eget volutpat felis. Etiam iaculis ligula nec dui pretium dictum. Praesent pulvinar fermentum turpis consequat condimentum.</p>
+                <h3>Olive Yew</h3>
+                <label>Olive Yew</label>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>Sed quis eros eu risus efficitur imperdiet. Ut et eros ligula. Integer tincidunt dui eget pulvinar tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eleifend lectus at lectus bibendum cursus. Nulla ornare elementum risus sagittis ultricies. Proin eget mi at odio laoreet rhoncus in sed elit. Vestibulum sagittis ut magna in ornare. Pellentesque volutpat ultrices tortor, a maximus tellus. Nullam quis elit ut mauris vestibulum ornare. Aliquam aliquam sagittis rutrum. Sed maximus vehicula placerat. Vestibulum eget volutpat felis. Etiam iaculis ligula nec dui pretium dictum. Praesent pulvinar fermentum turpis consequat condimentum.</p>
+                <h3>Teri Dactyl</h3>
+                <label>Teri Dactyl</label>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-quote-right"></i>
+                <p>Sed quis eros eu risus efficitur imperdiet. Ut et eros ligula. Integer tincidunt dui eget pulvinar tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque eleifend lectus at lectus bibendum cursus. Nulla ornare elementum risus sagittis ultricies. Proin eget mi at odio laoreet rhoncus in sed elit. Vestibulum sagittis ut magna in ornare. Pellentesque volutpat ultrices tortor, a maximus tellus. Nullam quis elit ut mauris vestibulum ornare. Aliquam aliquam sagittis rutrum. Sed maximus vehicula placerat. Vestibulum eget volutpat felis. Etiam iaculis ligula nec dui pretium dictum. Praesent pulvinar fermentum turpis consequat condimentum.</p>
+                <h3>Willie Findit</h3>
+                <label>Willie Findit</label>
+            </div>
+
+        </div>
+    </div>
+</section>
+<script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+<section class="news top rooms">
+    <div class="container">
+        <div class="heading">
+            <h1>News</h1>
+            <h2>Our News</h2>
+            <p>Lorem ipsum dolor sit amet constur adipisicing elit sed do eiusmtem por incid.</p>
+        </div>
+        <div class="content flex">
+            <div class="left grid2">
+
+                <div class="items">
+                    <div class="image">
+                        <img src="https://www.holdenbeachvacations.com/blog/wp-content/uploads/2020/09/baby-sea-turtles-1024x629.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Sed nec consectetur</h2>
+                        <div class="admin flex">
+                            <i class="fa-solid fa-user"></i>
+                            <label>Admin</label>
+                            <i class="fa-solid fa-heart"></i>
+                            <label>354</label>
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                        <p>Integer tincidunt dui eget pulvinar tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</p>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <div class="image">
+                        <img src="https://www.holdenbeachvacations.com/blog/wp-content/uploads/2020/09/baby-sea-turtles-1024x629.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Sed nec consectetur</h2>
+                        <div class="admin flex">
+                            <i class="fa-solid fa-user"></i>
+                            <label>Admin</label>
+                            <i class="fa-solid fa-heart"></i>
+                            <label>354</label>
+                            <i class="fa-solid fa-comment"></i>
+                        </div>
+                        <p>Nascetur ridiculus mus. Pellentesque eleifend lectus at lectus bibendum cursus. Nulla ornare elementum risus sagittis ultricies.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right">
+                <div class="box flex">
+                  <div class="img">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/04/5b/94/87/getlstd-property-photo.jpg" alt="">
+                  </div>
+                  <div class="stext">
+                    <h2>Etiam Vel Nequ</h2>
+                    <p>Constur adipisicing elit.
+                    </p>
+                  </div>
+                </div>
+                <div class="box flex">
+                  <div class="img">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipN8yAwX3EFgocCZpQ46IB_OqzuC2TcoMICNBEqP=s680-w680-h510" alt="">
+                  </div>
+                  <div class="stext">
+                    <h2>Etiam Vel Nequ</h2>
+                    <p>Lorem ipsum dolor sit..
+                    </p>
+                  </div>
+                </div>
+                <div class="box flex">
+                  <div class="img">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipNOUkchBYe5FORa687tAGkCJ_W3es67A-S7Zo2Y=s680-w680-h510" alt="">
+                  </div>
+                  <div class="stext">
+                    <h2>Etiam Vel Nequ</h2>
+                    <p>Adipisicing elit sed do eiusmtem por incid.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+<section class="newsletter mtop">
+    <div class="container flex_space">
+        <h1>Subscribe to Newsletter</h1>
+        <input type="text" placeholder="Your Email">
+        <input type="text" value="Subscribe">
+    </div>
+</section>
+
+<footer>
+    <div class="container grid">
+        <div class="box">
+            <img src="C:\Users\madis\Downloads\My project (2).jpg" alt="">
+            <p>Vivamus quis mi nec magna pretium sollicitudin. Suspendisse augue diam, dignissim ut risus nec, aliquam tristique elit. Fusce a massa id mi venenatis consequat. Nullam viverra dui nec efficitur euismod. Pellentesque mattis augue quis massa egestas, ut ultricies magna dapibus. Nullam consectetur est vel urna sollicitudin pulvinar. Ut dignissim, lorem id interdum viverra, nisi nunc sodales sem, nec fringilla enim ex at justo.</p>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Links</h2>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Services</li>
+                <li>Terms and Conditions</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>Vivamus pulvinar dolor sed lorem scelerisque, ac mollis augue maximus. Fusce tincidunt tincidun.</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <label>110 Rothschild Street, Holden Beach, NC 28462</label> <br>
+            <i class="fa-solid fa-phone"></i>
+            <label>(910) 842-6488</label> <br>
+            <i class="fa-solid fa-envelope"></i>
+            <label>HoldenBeachBC@gmail.com</label> <br>
+        </div>
+    </div>
+</footer>
+
+<div class="legal">
+    <p class="container">Copyright © 2023 example</p>
+</div>
+
+</body>
+
+</html>
